@@ -112,19 +112,78 @@
 
 
 
-let arrNumeri = [];
+// let arrNumeri = [];
 
-for (let index = 0; index < 6; index++) {
+// for (let index = 0; index < 6; index++) {
 
-    let numeroUser = parseInt(prompt('scrivi un numero'));
+//     let numeroUser = parseInt(prompt('scrivi un numero'));
 
-    if (numeroUser % 2 == 1) {
+//     if (numeroUser % 2 == 1) {
 
-        arrNumeri.push(numeroUser);
+//         arrNumeri.push(numeroUser);
 
-    }
+//     }
+
+// }
+
+
+// console.log(arrNumeri);
+
+
+
+
+
+
+
+
+
+
+
+
+//QUESTO è LO SNACK NUMERO 6
+// Chiedi un numero di 4 cifre all’utente
+// e calcola la somma di tutte le cifre che compongono il numero.
+
+
+let numeroUser = parseInt(prompt('scrivi un numero di 4 cifre'));
+
+if (numeroUser.toString().length < 4) {
+    console.log('hai scritto un numero troppo corto')
+
+} else if (numeroUser.toString().length > 4) {
+    console.log('hai scritto un numero troppo lungo')
+
+} else {
+    console.log(numeroUser);
+}
+
+
+
+
+let arrNumeriDati = [];
+
+let sommaNumeri = 0;
+
+let numeroSpecifico;
+
+for (let index = 0; index < 4; index++) {
+
+    numeroSpecifico = numeroUser.toString().charAt(index);
+    // console.log(numeroSpecifico);
+
+    arrNumeriDati.push(numeroSpecifico);
 
 }
 
 
-console.log(arrNumeri);
+// console.log(arrNumeriDati);
+
+
+for (let index = 0; index < arrNumeriDati.length; index++) {
+
+    sommaNumeri = sommaNumeri + parseInt(arrNumeriDati[index]);
+
+}
+
+
+console.log(sommaNumeri);
