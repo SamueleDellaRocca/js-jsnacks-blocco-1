@@ -64,3 +64,67 @@
 
 
 //QUESTO è LO SNACK NUMERO 4
+// In un array sono contenuti i nomi degli invitati alla festa del grande
+// Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
+// no alla festa.
+
+
+
+// const arrNomiInvitati = ['samuele', 'mauro', 'henry', 'gabriel', 'chiara', 'marco', 'paolo', 'giovanni', 'ettore'];
+
+// let nomeUser = prompt('scrivi il tuo nome');
+
+
+
+// let nomePresenteLista = false;
+
+// for (let index = 0; index < arrNomiInvitati.length; index++) {
+
+//     if (arrNomiInvitati[index].toLowerCase() == nomeUser.toLowerCase()) {
+//         nomePresenteLista = true;
+//     }
+// }
+
+
+// if (nomePresenteLista) {
+//     console.log(nomeUser);
+//     console.log('il tuo nome è presente nella lista');
+
+// } else {
+//     console.log(nomeUser);
+//     console.log('mi dispiace, ma non sei stato invitato alla festa');
+// }
+
+
+
+
+
+
+
+
+
+
+
+//QUESTO è LO SNACK NUMERO 5
+// Crea un array vuoto.
+// Chiedi per 6 volte all’utente di inserire un numero,
+// se è dispari inseriscilo nell’array.
+
+
+
+let arrNumeri = [];
+
+for (let index = 0; index < 6; index++) {
+
+    let numeroUser = parseInt(prompt('scrivi un numero'));
+
+    if (numeroUser % 2 == 1) {
+
+        arrNumeri.push(numeroUser);
+
+    }
+
+}
+
+
+console.log(arrNumeri);
