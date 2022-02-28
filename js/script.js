@@ -213,18 +213,18 @@
 
 
 
-somma = 0;
-let index = 0;
+// somma = 0;
+// let index = 0;
 
-while (index <= 10) {
+// while (index <= 10) {
 
-    somma += index;
-    index++
-}
+//     somma += index;
+//     index++
+// }
 
-console.log(somma);
-let mediaNumeri = somma / 10;
-console.log(mediaNumeri);
+// console.log(somma);
+// let mediaNumeri = somma / 10;
+// console.log(mediaNumeri);
 
 
 
@@ -307,20 +307,18 @@ console.log(mediaNumeri);
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi,
 // Gatsby vuole generare una falsa lista di 3 invitati.
 
-// const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
-// const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
+const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
+const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
 
-// const arrayFalsaLista = [];
+const arrayFalsaLista = [];
 
-// while (arrayFalsaLista.length < 3) {
+while (arrayFalsaLista.length < 3) {
 
-//     let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
-//     let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
+    let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
+    let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
 
-//     let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
-//     arrayFalsaLista.push(NomeCognomeInventato);
+    let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
+    arrayFalsaLista.push(NomeCognomeInventato);
+}
 
-// }
-
-
-// console.log(arrayFalsaLista);
+console.log(arrayFalsaLista);
