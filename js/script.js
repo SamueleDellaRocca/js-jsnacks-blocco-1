@@ -272,13 +272,38 @@
 
 
 
-let somma = 0;
-let index = 1
+// let somma = 0;
+// let index = 1
 
-while (index < 6) {
-    let numeroUser = parseInt(prompt('scrivi un numero'));
-    somma += numeroUser;
-    index++;
+// while (index < 6) {
+//     let numeroUser = parseInt(prompt('scrivi un numero'));
+//     somma += numeroUser;
+//     index++;
+// }
+
+// console.log(somma);
+
+
+
+
+
+
+
+
+
+
+
+
+// QUESTO è LO SNACK 2.2
+// Inserisci un numero, se è pari stampa il numero,
+// se è dispari stampa il numero successivo
+
+let numeroUser = parseInt(prompt('dimmi un numero'));
+
+if (numeroUser % 2 == 0) {
+    console.log(numeroUser)
+
+} else {
+    console.log(numeroUser + 1)
 }
 
-console.log(somma);
