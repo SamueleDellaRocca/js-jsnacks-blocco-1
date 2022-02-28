@@ -145,45 +145,114 @@
 // e calcola la somma di tutte le cifre che compongono il numero.
 
 
-let numeroUser = parseInt(prompt('scrivi un numero di 4 cifre'));
+// let numeroUser = parseInt(prompt('scrivi un numero di 4 cifre'));
 
-if (numeroUser.toString().length < 4) {
-    console.log('hai scritto un numero troppo corto')
+// if (numeroUser.toString().length < 4) {
+//     console.log('hai scritto un numero troppo corto')
 
-} else if (numeroUser.toString().length > 4) {
-    console.log('hai scritto un numero troppo lungo')
+// } else if (numeroUser.toString().length > 4) {
+//     console.log('hai scritto un numero troppo lungo')
 
-} else {
-    console.log(numeroUser);
+// } else {
+//     console.log(numeroUser);
+// }
+
+
+
+
+// let arrNumeriDati = [];
+
+// let sommaNumeri = 0;
+
+// let numeroSpecifico;
+
+// for (let index = 0; index < 4; index++) {
+
+//     numeroSpecifico = numeroUser.toString().charAt(index);
+//     // console.log(numeroSpecifico);
+
+//     arrNumeriDati.push(numeroSpecifico);
+
+// }
+
+
+// // console.log(arrNumeriDati);
+
+
+// for (let index = 0; index < arrNumeriDati.length; index++) {
+
+//     sommaNumeri = sommaNumeri + parseInt(arrNumeriDati[index]);
+
+// }
+
+
+// console.log(sommaNumeri);
+
+
+
+
+
+
+
+
+
+
+
+
+// QUESTO è LO SNACK NUMERO 1.9
+const arrNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+somma = 0;
+
+for (let index = 0; index < arrNumeri.length; index++) {
+
+    somma += arrNumeri[index];
+
 }
 
+console.log(somma);
+
+
+let mediaNumeri = somma / arrNumeri.length;
+
+
+console.log(mediaNumeri);
 
 
 
-let arrNumeriDati = [];
+// somma = 0;
 
-let sommaNumeri = 0;
+// let index = 0;
+// //----------------9               //10
+// while (arrNumeri[index]/*10*/ <= arrNumeri.length) {
 
-let numeroSpecifico;
+//     somma += arrNumeri[index];
 
-for (let index = 0; index < 4; index++) {
+//     index++
+// }
 
-    numeroSpecifico = numeroUser.toString().charAt(index);
-    // console.log(numeroSpecifico);
+// console.log(somma);
 
-    arrNumeriDati.push(numeroSpecifico);
-
-}
-
-
-// console.log(arrNumeriDati);
+// let mediaNumeri = somma / arrNumeri.length;
 
 
-for (let index = 0; index < arrNumeriDati.length; index++) {
-
-    sommaNumeri = sommaNumeri + parseInt(arrNumeriDati[index]);
-
-}
+// console.log(mediaNumeri);
 
 
-console.log(sommaNumeri);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// QUESTO è LO SNACK NUMERO 2.1
+
+
