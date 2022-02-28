@@ -200,23 +200,23 @@
 
 
 // QUESTO è LO SNACK NUMERO 1.9
-const arrNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const arrNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-somma = 0;
+// somma = 0;
 
-for (let index = 0; index < arrNumeri.length; index++) {
+// for (let index = 0; index < arrNumeri.length; index++) {
 
-    somma += arrNumeri[index];
+//     somma += arrNumeri[index];
 
-}
+// }
 
-console.log(somma);
-
-
-let mediaNumeri = somma / arrNumeri.length;
+// console.log(somma);
 
 
-console.log(mediaNumeri);
+// let mediaNumeri = somma / arrNumeri.length;
+
+
+// console.log(mediaNumeri);
 
 
 
@@ -254,5 +254,31 @@ console.log(mediaNumeri);
 
 
 // QUESTO è LO SNACK NUMERO 2.1
+// Il software deve chiedere per 5 volte all’utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+// Esegui questo programma in due versioni, con il for e con il while.
 
 
+
+// let somma = 0;
+
+// for (let index = 0; index < 5; index++) {
+//     let numeroUser = parseInt(prompt('scrivi un numero'));
+//     somma += numeroUser;
+// }
+
+// console.log(somma);
+
+
+
+
+let somma = 0;
+let index = 1
+
+while (index < 6) {
+    let numeroUser = parseInt(prompt('scrivi un numero'));
+    somma += numeroUser;
+    index++;
+}
+
+console.log(somma);
