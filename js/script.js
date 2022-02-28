@@ -298,12 +298,41 @@
 // Inserisci un numero, se è pari stampa il numero,
 // se è dispari stampa il numero successivo
 
-let numeroUser = parseInt(prompt('dimmi un numero'));
+// let numeroUser = parseInt(prompt('dimmi un numero'));
 
-if (numeroUser % 2 == 0) {
-    console.log(numeroUser)
+// if (numeroUser % 2 == 0) {
+//     console.log(numeroUser)
 
-} else {
-    console.log(numeroUser + 1)
+// } else {
+//     console.log(numeroUser + 1)
+// }
+
+
+
+
+
+
+
+
+
+// QUESTO è LO SNACK 2.3
+// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi,
+// Gatsby vuole generare una falsa lista di 3 invitati.
+
+const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
+const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
+
+const arrayFalsaLista = [];
+
+while (arrayFalsaLista.length < 3) {
+
+    let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
+    let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
+
+    let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
+    arrayFalsaLista.push(NomeCognomeInventato);
+
 }
 
+
+console.log(arrayFalsaLista);
