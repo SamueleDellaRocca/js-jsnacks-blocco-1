@@ -200,43 +200,31 @@
 
 
 // QUESTO è LO SNACK NUMERO 1.9
-// const arrNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // somma = 0;
 
-// for (let index = 0; index < arrNumeri.length; index++) {
-
-//     somma += arrNumeri[index];
-
+// for (let index = 0; index <= 10; index++) {
+//     somma += index;
 // }
 
 // console.log(somma);
-
-
-// let mediaNumeri = somma / arrNumeri.length;
-
-
+// let mediaNumeri = somma / 10;
 // console.log(mediaNumeri);
 
 
 
-// somma = 0;
+somma = 0;
+let index = 0;
 
-// let index = 0;
-// //----------------9               //10
-// while (arrNumeri[index]/*10*/ <= arrNumeri.length) {
+while (index <= 10) {
 
-//     somma += arrNumeri[index];
+    somma += index;
+    index++
+}
 
-//     index++
-// }
-
-// console.log(somma);
-
-// let mediaNumeri = somma / arrNumeri.length;
-
-
-// console.log(mediaNumeri);
+console.log(somma);
+let mediaNumeri = somma / 10;
+console.log(mediaNumeri);
 
 
 
@@ -319,20 +307,20 @@
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi,
 // Gatsby vuole generare una falsa lista di 3 invitati.
 
-const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
-const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
+// const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
+// const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
 
-const arrayFalsaLista = [];
+// const arrayFalsaLista = [];
 
-while (arrayFalsaLista.length < 3) {
+// while (arrayFalsaLista.length < 3) {
 
-    let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
-    let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
+//     let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
+//     let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
 
-    let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
-    arrayFalsaLista.push(NomeCognomeInventato);
+//     let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
+//     arrayFalsaLista.push(NomeCognomeInventato);
 
-}
+// }
 
 
-console.log(arrayFalsaLista);
+// console.log(arrayFalsaLista);
