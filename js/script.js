@@ -310,12 +310,13 @@
 const arrayNomi = ['samuele', 'henry', 'mauro', 'gabriel', 'chiara', 'francesco'];
 const arrayCognomi = ['derossi', 'montella', 'pellegrini', 'totti', 'perrotta', 'tommasi', 'candela', 'dimarco', 'del piero'];
 
+
 const arrayFalsaLista = [];
 
 while (arrayFalsaLista.length < 3) {
 
-    let indexNomi = Math.floor(Math.random() * (5 - 0 + 1) + 0);
-    let indexCognomi = Math.floor(Math.random() * (8 - 0 + 1) + 0);
+    let indexNomi = Math.floor(Math.random() * 6);
+    let indexCognomi = Math.floor(Math.random() * 9);
 
     let NomeCognomeInventato = arrayNomi[indexNomi] + ' ' + arrayCognomi[indexCognomi];
     arrayFalsaLista.push(NomeCognomeInventato);
